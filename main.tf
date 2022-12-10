@@ -1,10 +1,13 @@
 module "vpc" {
-  source     = "./vendor/modules/vpc"  
-  VPC_CIDR   = var.VPC_CIDR
-  ENV        = var.ENV
+  source            = "./vendor/modules/vpc"  
+  VPC_CIDR          = var.VPC_CIDR
+  ENV                = var.ENV
 
 }
 
+variable "PUBLIC_SUBNET_CIDR" {}
+variable "PRIVATE_SUBNET_CIDR" {}
+variabe "AZ" {}
 
 # module "vpc" {
 #   source = "git::https://github.com/b51-clouddevops/tf-module-vpc.git"
