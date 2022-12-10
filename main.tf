@@ -4,13 +4,9 @@ module "vpc" {
   ENV                 = var.ENV
   PUBLIC_SUBNET_CIDR  = var.PUBLIC_SUBNET_CIDR
   PRIVATE_SUBNET_CIDR = var.PRIVATE_SUBNET_CIDR
-  v
+  AZ                  = var.AZ 
 
 }
-
-variable "PUBLIC_SUBNET_CIDR" {}
-variable "PRIVATE_SUBNET_CIDR" {}
-variabe "AZ" {}
 
 # module "vpc" {
 #   source = "git::https://github.com/b51-clouddevops/tf-module-vpc.git"
