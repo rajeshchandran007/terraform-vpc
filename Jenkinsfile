@@ -9,7 +9,7 @@ pipeline {
 
         stage('Terraform Plan') {
             steps {
-                sh "terraform init --backend-config=env-dev/dev-backend.tfvars"
+                sh "terraform plan -var-file=env-dev/dev.tfvars"
             }
         }
 
